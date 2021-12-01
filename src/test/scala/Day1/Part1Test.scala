@@ -28,11 +28,12 @@ class Part1Test extends AnyFlatSpec with should.Matchers {
   }
 
   it should "increment a counter of positive results (small)" in {
-    val testList = List(1, 2, 3, 4, 3, 5, 6, 2, 7, 8, 9)
+    val testList = splitIntoPairs(List(1, 2, 3, 4, 3, 5, 6, 2, 7, 8, 9))
     countIncreaseInPairs(testList) shouldBe 8
   }
 
   it should "increment a counter of positive results (large)" in {
-    countIncreaseInPairs(LIST_OF_NUMBERS) shouldBe 1766
+    val testList = splitIntoPairs(LIST_OF_NUMBERS)
+    countIncreaseInPairs(testList) shouldBe 1766
   }
 }
