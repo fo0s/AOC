@@ -8,7 +8,6 @@ class Part1Test extends AnyFlatSpec with should.Matchers {
   "Day2" should
     "have a list of numbers" in {
     assert(INPUT_VALUES.nonEmpty)
-    println(INPUT_VALUES)
   }
 
   it should "be able to split the entries into an array" in {
