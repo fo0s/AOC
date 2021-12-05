@@ -2,7 +2,7 @@ package Day3
 
 object Part1 {
 
-  val BINARY_VALUES: Seq[String] = Helpers.GeneralHelpers.fileToList("src/main/scala/Day3/binary_inputs.txt")
+  val BINARY_VALUES: Seq[String] = Helpers.GeneralHelpers.fileToList("src/main/scala/Helpers/Day3Input.txt")
 
   def processBinaryArray(listOfBinaries: Seq[String], isTestString: Boolean) = {
     val arrayToMatrix = listOfBinaries.map(_.toCharArray)

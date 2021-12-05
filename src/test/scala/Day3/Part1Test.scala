@@ -29,7 +29,6 @@ class Part1Test extends AnyFlatSpec with should.Matchers {
 
   it should "return a number based on binary" in {
     val binary = processBinaryArray(BINARY_VALUES, false).mkString("")
-    println(binary)
     val reversedBinary = List(1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0).mkString("")
 
     binaryToInt(binary) shouldBe 1565
